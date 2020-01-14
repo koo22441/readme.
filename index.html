@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>hewe彩妝</title>
+    <meta charset="utf-8">
+    <link href="css/site.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/fig.css" rel="stylesheet" type="text/css">
+    <link href="css/btn1.css" rel="stylesheet" type="text/css">
+    <style>
+        main {
+            background-color: floralwhite;
+        }
+
+        .slider_container {
+            margin: 30px auto;
+            width: 1200px;
+            height: 540px;
+            position: relative;
+            border: 0px solid;
+            border-color: #fff;
+            border-bottom-width: 0px;
+            background-color: #f5f5f5;
+            box-shadow: #666 0 0 5px;
+        }
+
+        .slider_container div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .slider_container div {
+            -webkit-animation: round 12.5s linear infinite;
+            animation: round 12.5s linear infinite;
+        }
+
+        @-webkit-keyframes round {
+            8% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+            16% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+            32% {
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        @keyframes round {
+            8% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+            16% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+            }
+
+            32% {
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+        }
+
+        .slider_container div:nth-child(5) {
+            -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+        }
+
+        .slider_container div:nth-child(4) {
+            -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+        }
+
+        .slider_container div:nth-child(3) {
+            -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+        }
+
+        .slider_container div:nth-child(2) {
+            -webkit-animation-delay: 7.5s;
+            animation-delay: 7.5s;
+        }
+
+        .slider_container div:nth-child(1) {
+            -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+        }
+
+        #ab {
+            margin-left: 720px;
+            width: 450px;
+            height: 200px;
+        }
+
+        #aa {
+            width: 1200px;
+            height: 540px;
+        }
+
+        .slider_container span {
+            color: #828282;
+            background: floralwhite;
+            position: absolute;
+            left: 0%;
+            top: 420px;
+            width: 0;
+            height: 0px;
+            font-size: 25px;
+            text-align: left;
+            line-height: 200px;
+            -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+            transform: scaleY(0);
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .slider_container:hover span {
+            width: 100%;
+            -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+            transform: scaleY(1);
+        }
+
+        .slider_container:hover div {
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+
+        #vv {
+            border-radius: 25px;
+        }
+
+        #me {
+            /*定義上一層ul li與下一層ul的距離*/
+            z-index: 20;
+            top: 100%;
+            left: 0%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="all">
+        <header id="header">
+            <div class="logo"><a href="index.html"><img id="ab" src="heme/national.png"></a></div>
+        </header>
+        <div id="menu-wrapper">
+            <ul class="menu">
+                <li><a href="index.html">hewe系列</a>
+                    <ul>
+                        <li><a href="tn-1.html">唇頰彩</a></li>
+                        <li><a href="tn-3.html">底妝</a></li>
+                        <li><a href="tn-2.html">眼彩</a></li>
+                        <li><a href="#">保養</a></li>
+                        <li><a href="#">清潔彩妝</a></li>
+                    </ul>
+                </li>
+                <li><a href="tn-4.html">最新消息</a>
+                </li>
+                <li><a href="#">達人推薦</a>
+                </li>
+                <li><a href="#">公司簡介</a>
+                    <ul>
+                        <li><a href="#">喜樂有限公司</a>
+                            <ul>
+                                <li><a href="#">旗下品牌</a>
+                                    <hr />
+                                    <ul id="me">
+                                        <li><a href="#">喜多指彩</a></li>
+                                        <li><a href="#">喜可服飾</a></li>
+                                        <li><a href="#">唯可女鞋</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li><a href="tn-1.html">總代理</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">通路情報</a>
+                    <ul>
+                        <li><a href="tn-1.html">全台門市</a></li>
+                        <li><a href="#">蝦皮官網</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div id="wrapper">
+
+            <main>
+                <div class="slider_container">
+                    <div>
+                        <img id="aa" src="heme/title.jpg" alt="pure css3 slider" />
+                        <span class="info">定價240</span>
+                    </div>
+
+                    <div>
+                        <img id="aa" src="heme/title2.jpg" alt="pure css3 slider" />
+                        <span class="info">定價330</span>
+                    </div>
+                    <div>
+                        <img id="aa" src="heme/title1.jpg" alt="pure css3 slider" />
+                        <span class="info">定價240</span>
+                    </div>
+                    <div>
+                        <img id="aa" src="heme/title3.jpg" alt="pure css3 slider" />
+                        <span class="info">定價250</span>
+                    </div>
+                    <div>
+                        <img id="aa" src="heme/title4.jpg" alt="pure css3 slider" />
+                        <span class="info">定價360</span>
+                    </div>
+                </div>
+                <div id="fig-wrapper">
+                    <p class="title"><img src="heme/NEWS_.jpg" style="display:block; margin:auto;" id="vv"></p>
+                    <section class="fig">
+                        <p class="fig-title"><u>主打唇釉</u></p>
+                        <a href="tn-1.html"><img class="fig-img" src="heme/fig1.jpg"></a>
+                    </section>
+                    <section class="fig1">
+                        <p class="fig-title"><u>眼影盤秋冬新色</u></p>
+                        <a href="tn-2.html"><img class="fig-img" src="heme/fig2.jpg"></a>
+                    </section>
+                    <section class="fig2">
+                        <p class="fig-title"><u>新上市水潤唇膏</u></p>
+                        <a href="tn-1.html"><img class="fig-img" src="heme/fig3.jpg"></a>
+                    </section>
+                    <section class="fig3">
+                        <p class="fig-title"><u>六色眼影盤</u></p>
+                        <a href="tn-2.html"><img class="fig-img" src="heme/fig4.jpg"></a>
+                    </section>
+                    <section class="fig4">
+                        <p class="fig-title"><u>hewe柔霧唇膏</u></p>
+                        <a href="tn-1.html"><img class="fig-img" src="heme/fig5.png"></a>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+            <p>客服專線:02-87518877</p>
+            <p>客服服務時間:MON~FRI 9:00~17:00</p>
+        </footer>
+    </div>
+</body></html>
