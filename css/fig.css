@@ -1,0 +1,62 @@
+.fig {
+    float: left;
+    width: 300px;
+    margin-left: 325px;
+    margin-top: 150px;
+}
+
+.fig1 {
+    float: left;
+    width: 300px;
+    margin-left: 175px;
+    margin-top: 150px;
+}
+
+.fig2 {
+    float: right;
+    width: 300px;
+    margin-top: 150px;
+    margin-right: 325px;
+}
+
+.fig3 {
+    float: left;
+    width: 300px;
+    margin-left: 325px;
+    margin-top: 200px;
+}
+
+.fig4 {
+    float: left;
+    width: 300px;
+    margin-left: 175px;
+    margin-top: 200px;
+}
+
+.fig5 {
+    float: left;
+    height: 565px;
+    width: 800px;
+    margin-left: 675px;
+    margin-top: 50px;
+}
+
+.fig-title {
+    font-size: 20px;
+    font-family: '微軟正黑體';
+    color: #E65100;
+    padding: 5px;
+}
+
+.fig-img {
+    margin: 0;
+    height: 350px;
+    width: 350px;
+
+}
+
+#fig-wrapper:after {
+    content: "";
+    display: block;
+    clear: both;
+}
